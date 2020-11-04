@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=320, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="keywords" content="キーワード1,キーワード2,キーワード3">
+<meta name="description" content="詳細ページの説明文を入力してください。">
+<title>詳細ページです。タイトルを入力してください</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery.biggerlink.js"></script>
+<script type="text/javascript">
+<!--
+$(function(){
+	$("ul li").biggerlink();
+});
+-->
+</script>
+<!-- ▼ファビコン設置箇所▼
+※ファビコンを使用する際はコメントアウトを消してください。-->
+<!-- /<link rel="shortcut icon" href="icon URL.ico"> -->
+<!-- ▲ファビコン設置箇所▲ -->
+</head>
+<body>
+
+<!-- ヘッダここから -->
+<header>
+
+	<h1>サイト名が入ります</h1>
+
+</header>
+<!-- /ヘッダここまで -->
+
+
+<!-- メニューここから -->
+<div id="menu">
+<nav>
+<ul>
+	<li><a href="about.html">ABOUT</a></li>
+	<li><a href="free.html">FREE</a></li>
+	<li><a href="free.html">FREE</a></li>
+	<li><a href="mailto:メールアドレス＠">CONTACT</a></li>
+</ul>
+</nav>
+</div>
+<!-- /メニューここまで -->
+
+
+<!-- パンくずここから -->
+<ul id="pan">
+	<li><a href="index.html">TOP</a></li>
+	<li>&gt;</li>
+	<li><a href="cate.html">カテゴリー一覧ページ</a></li>
+	<li>&gt;</li>
+	<li>選択されたページ</li>
+</ul>
+<!-- /パンくずここまで -->
+
+<section>
+<div id="title">
+	<h1>詳細欄</h1>
+</div>
+</section>
+
+<!-- フリーリストここから -->
+<section>
+<div class="free_txt">
+
+<!-- 画像 -->
+<img src="img/dummy_banner.gif" alt="詳細の画像やアイキャッチなどが画像の場合：代替文字" class="free_eyecatch">
+
+<!-- テキスト -->
+<!-- 
+<p class="free_eyecatch">詳細の画像やアイキャッチなどがテキストの場合</p>
+ -->
+
+<p>説明文やフリーテキストを入力します。<br>
+説明文やフリーテキストを入力します。</p>
+
+<a href="urlを入力してください" class="btn corner"><span class="corner">リンク（詳細へ飛ぶ）</span></a>
+
+</div>
+</section>
+<!-- /フリーリストここまで -->
+
+
+<!-- 広告ここから -->
+<section>
+	<a href="URLを入れてください。" class="ad corner">
+	<!-- 画像 -->
+	<!--
+		<img src="img/dummy_banner.gif" alt="スマートフォン用広告バナー">
+	-->
+
+	<!-- テキスト -->
+	<span class="corner">
+	テキスト広告や文章などが入ります。<br>
+	角丸にしたい場合は「a」タグのクラス「ad」の後ろにスペースを明けて
+	「corner」を追加してください。
+	テキストの際は「span」にも追加してください。
+	</span>
+
+	</a>
+</section>
+<!-- /広告ここまで -->
+
+
+<!-- フッタここから -->
+<footer>
+
+	<!-- インデックス・戻るここから -->
+	<div class="jump">
+	<a href="index.html" class="goindex"><span>TOP</span></a>
+	<a href="javascript:history.back();" class="back"><span>&lt; Back</span></a>
+	</div>
+	<!-- /インデックス・戻るここまで -->
+	
+	<!-- メニューここから -->
+	<div class="foot_nav"> 
+		<ul>
+			<li><a href="cate.html">カテゴリ</a></li>
+			<li><a href="cate.html">カテゴリ</a></li>
+			<li><a href="cate.html">カテゴリ</a></li>
+		</ul>
+		<ul>
+			<li><a href="about.html">About</a></li>
+			<li><a href="mailto:メールアドレス">Contact</a></li>
+			<li><a href="free.html">FREE</a></li>
+		</ul>
+	</div>
+	<!-- /メニューここまで -->
+
+	<!-- コピーライトここから -->
+	<div id="copy">
+	Copyrightc <a href="あなたのサイトURL">サイト名</a>, All rights reserved.<br>
+	<!-- ***削除禁止*** -->
+	Designed by <a href="https://www.bannerbridge.net/">バナーブリッジ</a>
+	<!-- ***削除禁止*** -->
+	</div>
+	<!-- /コピーライトここまで -->
+
+</footer>
+<!-- /フッタここまで -->
+
+</body>
+</html>

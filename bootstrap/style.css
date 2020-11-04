@@ -1,0 +1,601 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------------------
+	デフォルトスタイル
+-----------------------*/
+body,p,h1,h2,h3,h4,h5,h6,
+span,small,strong,
+div,ul,li,
+figure,img,
+header,footer,nav,section{
+    margin:0;
+    padding:0;
+	border:none;
+	outline:none;
+	font-size:1rem;
+}
+
+header,footer,nav,section{display:block;}
+
+html{
+	font:13px/1.3 "ヒラギノ角ゴ Pro W3";
+	-webkit-text-size-adjust:none;}
+
+li{list-style:none;}
+
+
+
+/*----------------------------------------
+	全ページ共有ここから
+----------------------------------------*/
+body{
+	background:url(img/bg.jpg) #FFF;
+	color:#979797;
+}
+
+/* リンク色変更はここ */
+a{
+	color:#FFA49B;
+	text-decoration:none;
+}
+
+/*【角丸】
+ 　角丸にしたいコンテンツに
+ 　クラスで指定してください。
+*/
+.corner{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+.corner img{
+	background:#FFF;
+	padding:1px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+/*--------------------
+	共通ヘッダ部分
+--------------------*/
+header{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(1.00, #888888), color-stop(0.50, #949494), color-stop(0.49, #9C9C9C), color-stop(0.00, #A2A2A2));
+	background:-webkit-linear-gradient(top, #A2A2A2 0%, #9C9C9C 49%, #949494 50%, #888888 100%);
+	background:-moz-linear-gradient(top, #A2A2A2 0%, #9C9C9C 49%, #949494 50%, #888888 100%);
+	background:-o-linear-gradient(top, #A2A2A2 0%, #9C9C9C 49%, #949494 50%, #888888 100%);
+	background:-ms-linear-gradient(top, #A2A2A2 0%, #9C9C9C 49%, #949494 50%, #888888 100%);
+	background:linear-gradient(top, #A2A2A2 0%, #9C9C9C 49　%, #949494 50%, #888888 100%);
+	border-bottom:solid 1px #686868;
+}
+
+/*	サイト名やタイトル
+--------------------*/
+header h1{
+	padding:.25em 0;
+	border-bottom:solid 1px #E3E3E3;
+	color:#E3E3E3;
+	font-size:24px;
+	text-shadow:0 0 1px #A2A2A2;
+	text-align:center;
+}
+
+
+/*	メニュー
+--------------------*/
+#menu{
+	width:100%;
+	overflow:hidden;
+	border-top:solid 1px #FFF;
+	position:relative;
+}
+
+nav li{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(1.00, #E9E9E9), color-stop(0.50, #E9E9E9), color-stop(0.49, #EEEEEE), color-stop(0.00, #E9E9E9));
+	background:-webkit-linear-gradient(top, #E9E9E9 0%, #EEEEEE 49%, #E9E9E9 50%, #E9E9E9 100%);
+	background:-moz-linear-gradient(top, #E9E9E9 0%, #EEEEEE 49%, #E9E9E9 50%, #E9E9E9 100%);
+	background:-o-linear-gradient(top, #E9E9E9 0%, #EEEEEE 49%, #E9E9E9 50%, #E9E9E9 100%);
+	background:-ms-linear-gradient(top, #E9E9E9 0%, #EEEEEE 49%, #E9E9E9 50%, #E9E9E9 100%);
+	background:linear-gradient(top, #E9E9E9 0%, #EEEEEE 49%, #E9E9E9 50%, #E9E9E9 100%);
+	width:25%;
+	border-bottom:solid 1px #C9C9C9;
+	font-size:12px;
+	text-align:center;
+	float:left;
+}
+
+nav li.active{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(1.00, #FFD7D3), color-stop(0.50, #FFE1DE), color-stop(0.49, #FFD7D3), color-stop(0.00, #FFD7D3));
+	background:-webkit-linear-gradient(top, #FFD7D3 0%, #FFD7D3 49%, #FFE1DE 50%, #FFD7D3 100%);
+	background:-moz-linear-gradient(top, #FFD7D3 0%, #FFD7D3 49%, #FFE1DE 50%, #FFD7D3 100%);
+	background:-o-linear-gradient(top, #FFD7D3 0%, #FFD7D3 49%, #FFE1DE 50%, #FFD7D3 100%);
+	background:-ms-linear-gradient(top, #FFD7D3 0%, #FFD7D3 49%, #FFE1DE 50%, #FFD7D3 100%);
+	background:linear-gradient(top, #FFD7D3 0%, #FFD7D3 49%, #FFE1DE 50%, #FFD7D3 100%);
+}
+
+nav li a{
+	padding:.8em 0;
+	display:block;
+	border-right:solid 1px #C9C9C9;
+	border-left:solid 1px #FFF;
+	border-bottom:solid 1px #FFF;
+	color:#A2A2A2;
+	font-weight:bold;
+	text-shadow:1px 1px 1px #C7C7C7,-1px -1px 1px #F5F5F5;
+}
+
+nav li.active a{
+	color:#FFA49B;
+	text-shadow:-1px -1px 1px #CC837C,1px 1px 1px #FFF;
+}
+
+/*	パンくず
+--------------------*/
+#pan{
+	padding:.5em;
+	overflow:hidden;
+	border-bottom:solid 1px #DFDFDF;
+	font-weight:bold;
+	text-shadow:0 0 1px #CCC;
+}
+
+#pan li{
+	float:left;
+}
+
+#pan li:nth-child(even){
+	margin:0 5px;
+}
+
+#pan li a{
+	text-decoration:underline;
+}
+
+
+/*	セクションボーダー
+--------------------*/
+section{
+	padding:10px 0;
+	border-top:solid 1px #FFF;
+	border-bottom:solid 1px #DFDFDF;
+}
+
+
+/*	広告
+--------------------*/
+.ad{
+	max-width:95%;
+	margin:auto;
+	overflow:hidden;
+	display:block;
+	text-align:center;
+	border:solid 1px #FFF;
+}
+
+.ad img{
+	max-width:98.5%;
+	height:auto;
+	margin:auto;
+	display:block;
+	border:solid 1px #CCC;
+}
+
+.ad span{
+	background:#FFF;
+	max-width:98.5%;
+	height:auto;
+	margin:auto;
+	padding:5px;
+	display:block;
+	border:solid 1px #CCC;
+	text-align:left;
+}
+
+/*	タイトル
+--------------------*/
+#title h1{
+	font-size:30px;
+	text-align:center;
+}
+
+
+/*--------------------
+	共通フッター部分
+--------------------*/
+footer{
+	padding-top:10px;
+	border-top:solid 1px #FFF;
+}
+
+footer a{
+	text-decoration:underline;
+}
+
+/*	インデックス・戻る
+--------------------*/
+.jump{
+	overflow:hidden;}
+
+.goindex,
+.back{
+	background:#979797;
+	color:#FFF;
+	position:relative;
+	float:right;
+}
+
+.goindex{
+	padding:.65em 1.5em;
+
+	-moz-border-radius:5px 5px 0px 0px;
+	-webkit-border-radius:5px 5px 0px 0px;
+	border-radius:5px 5px 0px 0px;
+}
+
+.back{
+	margin:3px 1px 0 0;
+	padding:.525em 1.5em .5em 1em;
+	float:right;
+
+	-moz-border-radius:5px 0px 5px 0px;
+	-webkit-border-radius:5px 0px 5px 0px;
+	border-radius:5px 0px 5px 0px;
+}
+
+/*	フッタメニュー
+--------------------*/
+.foot_nav{
+	background:#979797;
+	padding:.8em .5em .5em;
+	overflow:hidden;
+	clear:both;
+}
+
+.foot_nav ul{
+	width:50%;
+	color:#FFF;
+	float:left;
+	position:relative;
+}
+
+.foot_nav ul li{
+	margin:auto;
+	margin-bottom:2px;
+}
+
+.foot_nav ul li a{
+	width:98%;
+	padding:.75em 0;
+	font-size:12px;
+	display:block;
+	color:#FFF;
+	border-style:solid;
+	border-color:#B0B0B0 #7D7D7D #7D7D7D #B0B0B0;
+	border-width:1px 1px 1px 1px;
+	text-align:center;
+}
+
+#copy{
+	padding:.5em 0;
+	font-size:12px;
+	text-align:center;
+}
+
+
+/*----------------------------------------
+ INDEXページここから
+----------------------------------------*/
+/*	TOP画像
+--------------------*/
+.top_img{
+	padding:10px 0;
+	overflow:hidden;
+	border-top:solid 1px #FFF;
+	border-bottom:solid 1px #DFDFDF;
+}
+
+.top_img img{
+	max-width:318px;
+	height:auto;
+	border:solid 1px #CCC;
+}
+
+/* ニュース
+--------------------*/
+#news{
+	padding:10px 0;
+	border-top:solid 1px #FFF;
+	border-bottom:solid 1px #DFDFDF;
+}
+
+#news li{
+	padding:.5em;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+}
+
+#news li span{
+	font-weight:bold;
+	letter-spacing:-1px;
+	margin-right:.5em;
+}
+
+
+/* カテゴリリスト
+--------------------*/
+.cate_list{
+	margin:0 .45em;
+}
+
+.cate_list li{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(1.00, #F0F0F0), color-stop(0.50, #F6F6F6), color-stop(0.49, #FBFBFB), color-stop(0.00, #FFF));
+	background:-webkit-linear-gradient(top, #FFF 0%, #FBFBFB 49%, #F6F6F6 50%, #F0F0F0 100%);
+	background:-moz-linear-gradient(top, #FFF 0%, #FBFBFB 49%, #F6F6F6 50%, #F0F0F0 100%);
+	background:-o-linear-gradient(top, #FFF 0%, #FBFBFB 49%, #F6F6F6 50%, #F0F0F0 100%);
+	background:-ms-linear-gradient(top, #FFF 0%, #FBFBFB 49%, #F6F6F6 50%, #F0F0F0 100%);
+	background:linear-gradient(top, #FFF 0%, #FBFBFB 49%, #F6F6F6 50%, #F0F0F0 100%);
+	margin-bottom:.5em;
+	border:solid 1px #FFF;}
+
+.cate_list li a{
+	display:block;
+	overflow:hidden;
+	color:#A2A2A2;
+	border:solid 1px #989898;
+	position:relative;
+}
+
+.cate_list li a span.icon{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(1.00, #999999), color-stop(0.50, #9F9F9F), color-stop(0.49, #CFCFCF), color-stop(0.00, #A9A9A9));
+	background:-webkit-linear-gradient(top, #A9A9A9 0%, #CFCFCF 49%, #9F9F9F 50%, #999999 100%);
+	background:-moz-linear-gradient(top, #A9A9A9 0%, #CFCFCF 49%, #9F9F9F 50%, #999999 100%);
+	background:-o-linear-gradient(top, #A9A9A9 0%, #CFCFCF 49%, #9F9F9F 50%, #999999 100%);
+	background:-ms-linear-gradient(top, #A9A9A9 0%, #CFCFCF 49%, #9F9F9F 50%, #999999 100%);
+	background:linear-gradient(top, #A9A9A9 0%, #CFCFCF 49%, #9F9F9F 50%, #999999 100%);
+	width:25%;
+	padding:3px;
+	display:block;
+	color:#FFF;
+	font-size:36px;
+	letter-spacing:-2px;
+	float:left;
+}
+
+.cat_list_right{
+	width:200px;
+	padding:0 15px 0 5px;
+	float:right;
+}
+
+.cat_list_right small{
+	margin-top:.8em;
+	display:block;
+	font-size:smaller;
+}
+
+.cat_list_right h3{
+	font-size:16px;
+}
+
+.cate_list li a:after{
+	content:">";
+	width:1em;
+	height:1em;
+	margin-top:-11px;
+	color:#FFA49B;
+	font-size:18px;
+	font-weight:bold;
+	text-shadow:0 0 1px #FFA49B;
+	position:absolute;
+	top:50%;
+	right:-7px;
+}
+
+
+/*----------------------------------------
+ ・カテゴリーページ
+ ・アバウトページ
+ ・ニュースページ
+ ・フリーページここから
+----------------------------------------*/
+/* リスト繰り返し
+--------------------*/
+.free_list li div,
+.free_list li a:not(.part_link){
+	padding:1em 1.2em 1em 1em;
+	display:block;
+	overflow:hidden;
+	position:relative;
+	border-top:solid 1px #FFF;
+	border-bottom:solid 1px #E6D9D9;
+}
+
+.free_list li:first-child div,
+.free_list li:first-child a:not(.part_link){
+	padding-top:0;
+	border-top:none;
+
+}
+
+.free_list li:last-child div,
+.free_list li:last-child a:not(.part_link){
+	border-bottom:none;
+}
+
+.free_list li a:after{
+	content:">";
+	width:1em;
+	height:1em;
+	margin-top:-9px;
+	font-size:18px;
+	font-weight:bold;
+	text-shadow:0 0 1px #FFA49B;
+	position:absolute;
+	top:50%;
+	right:-5px;
+}
+
+.free_list li a.part_link:after{
+	content:"";
+	display:none;
+}
+
+.free_list li div h3,
+.free_list li a h3{
+	font-size:16px;
+	line-height:1.1;
+	position:relative;
+}
+
+.free_list li div h3:before,
+.free_list li div h3:after,
+.free_list li a h3:before,
+.free_list li a h3:after{
+	content:"";
+	display:block;
+	position:absolute;
+	top:50%;
+}
+
+.free_list li div h3:before,
+.free_list li a h3:before{
+	width:1px;
+	height:.5em;
+	margin-left:-.9em;
+	border-left:solid 1px #5D5D5D;}
+
+.free_list li div h3:after,
+.free_list li a h3:after{
+	width:0;
+	height:0;
+	margin-left:-.8em;
+	border-top:solid 4px transparent;
+	border-right:solid 5px transparent;
+	border-bottom:solid 4px transparent;
+	border-left:solid 5px #5D5D5D;
+}
+
+/*	リスト画像有り(画像サイズ小)
+--------------------*/
+.img60 img{
+	max-width:60px;
+	height:auto;
+	margin-right:.5em;
+	padding:0;
+	float:left;
+}
+
+.img60 h3{
+	margin:0 0 .2em 80px;
+	color:#5D5D5D;}
+
+a.img60 p{
+	color:#979797;
+}
+
+.img60 h3:after,
+.img60 h3:before{
+	margin-top:-.2em;}
+
+/*	リスト画像有り(画像サイズ大)
+--------------------*/
+.img80 img{
+	max-width:80px;
+	height:auto;
+	margin-right:.5em;
+	padding:0;
+	float:left;
+}
+
+.img80 h3{
+	margin:0 0 .2em 100px;
+	color:#5D5D5D;}
+
+a.img80 p{
+	color:#979797;
+}
+
+.img80 h3:after,
+.img80 h3:before{
+	margin-top:-.3em;
+}
+
+/*	リスト画像無し・リンク無し
+--------------------*/
+.no_img h3{
+	margin:0 0 .2em 1em;
+	color:#5D5D5D;}
+
+.no_img h3:after,
+.no_img h3:before{
+	margin-top:-.2em;
+}
+
+a.no_img p{
+	color:#979797;
+}
+
+/*	一部リンク
+--------------------*/
+.part_link{
+	background:#FFA49B;
+	padding:.1em .5em;
+	color:#FFF;
+}
+
+
+/*----------------------------------------
+ 詳細ページここから
+----------------------------------------*/
+/*-- 本文 --*/
+.free_txt{
+	margin:0 .45em;
+}
+
+.free_eyecatch{
+	max-width:95%;
+	height:auto;
+	margin:10px auto;
+	display:block;
+	border:solid 1px #CCC;
+}
+
+p.free_eyecatch{
+	background:#FFF;
+	max-width:93%;
+	height:auto;
+	margin:auto;
+	padding:5px;
+	display:block;
+	border:solid 1px #E0E4B4;
+	text-align:left;
+}
+
+.btn{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(1.00, #FFCCC6), color-stop(0.00, #FFE3DF));
+	background:-webkit-linear-gradient(top, #FFE3DF 0%, #FFCCC6 100%);
+	background:-moz-linear-gradient(top, #FFE3DF 0%, #FFCCC6 100%);
+	background:-o-linear-gradient(top, #FFE3DF 0%, #FFCCC6 100%);
+	background:-ms-linear-gradient(top, #FFE3DF 0%,  #FFCCC6 100%);
+	background:linear-gradient(top, #FFE3DF 0%, #FFCCC6 100%);
+
+	margin-top:1em;
+	display:block;
+	border:solid 1px #FFD7D3;
+}
+
+.btn span{
+	padding:.6em 0;
+	display:block;
+	border:solid 1px #FFF9ED;
+	color:#979797;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	text-shadow:1px 1px 0 #CCC,-1px -1px 0 #FFFFFF;
+}
+
