@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=320, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 <meta name="keywords" content="キーワード1,キーワード2,キーワード3">
-<meta name="description" content="フリーページの説明文を入力してください。">
-<title>解説</title>
+<meta name="description" content="カテゴリー一覧の説明文を入力してください。">
+<title>宿題</title>
 <link rel="stylesheet" type="text/css" href="style.css" media="screen">
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" src="js/jquery.biggerlink.js"></script>
@@ -36,10 +36,10 @@ $(function(){
 <div id="menu">
 <nav>
 <ul>
-	<li><a href="about.html">新たな提案</a></li>
-	<li class="active"><a href="free.html">解説</a></li>
-	<li><a href="seiseki.html">成績</a></li>
-	<li><a href="mailto:メールアドレス＠">宿題を質問する</a></li>
+	<li><a href="about.html">ABOUT</a></li>
+	<li><a href="free.html">FREE</a></li>
+	<li><a href="free.html">FREE</a></li>
+	<li><a href="mailto:メールアドレス＠">CONTACT</a></li>
 </ul>
 </nav>
 </div>
@@ -50,13 +50,13 @@ $(function(){
 <ul id="pan">
 	<li><a href="index.html">TOP</a></li>
 	<li>&gt;</li>
-	<li>解説</li>
+	<li>選択したカテゴリー一覧</li>
 </ul>
 <!-- /パンくずここまで -->
 
 <section>
 <div id="title">
-	<h1>解説</h1>
+	<h1>国語</h1>
 </div>
 </section>
 
@@ -65,69 +65,41 @@ $(function(){
 <ul class="free_list">
 
 
-	<!-- 画像無しここから -->
+	<!-- 画像(60px)・リンクありここから -->
 	<li>
-		<div class="no_img">
-		<h3>数学</h3>
-	</li>
-	<!-- /画像無しここまで -->
-
-	<!-- 画像(80px)ありここから -->
-	<li>
-		<div class="img80">
-		<img src="kaisetu1.jpg" alt="画像の代替文字が入ります。">
-		<h3>2次関数</h3>
-		<p>答え合わせしてください<br>
-		<strong>赤で訂正すること</strong>
-		</p>
-		</div>
-	</li>
-	<!-- /画像(80px)ありここまで -->
-
-	<!-- 画像(60px)ありここから -->
-	<li>
-		<div class="img60">
-		<img src="kaisetu2.jpg" alt="画像の代替文字が入ります。">
-		<h3>確率</h3>
-		<p>答え合わせしてください<br>
-		<strong>赤で訂正すること</strong>
-		</p>
-		</div>
-	</li>
-	<!-- /画像(60px)ありここまで -->
-
-	<!-- 画像無し・一部リンクここから -->
-	<li>
-		<div class="no_img">
-		<h3>理科</h3>
-		</div>
-	</li>
-	<!-- /画像無し・一部リンクここまで -->
-
-	<!-- 画像(80px)ありここから -->
-	<li>
-		<a href="" class="img60">
-		<img src="kaisetu3.jpg" alt="画像の代替文字が入ります。" class="corner">
-		<h3>花の作り</h3>
-		<p>答え合わせしてください<br>
-		<br>
-		<strong>赤で訂正すること</strong>
+		<a href="detail.html" class="img60">
+		<img src="mondai.jpg" alt="画像の代替文字が入ります。" class="corner">
+		<h3>12月1日配布</h3>
+		<p><strong>12月3日期限</strong>
 		</p>
 		</a>
 	</li>
-	<!-- /画像(80px)ありここまで -->
+	<!-- /画像(60px)・リンクありここまで -->
 
-	<!-- 画像(60px)ありここから -->
+
+	<!-- 画像(60px)・リンクありここから -->
 	<li>
-		<a href="" class="img60">
-		<img src="kaisetu4.jpg" alt="画像の代替文字が入ります。" class="corner">
-		<h3>シダ植物の体</h3>
-		<p>答え合わせしてください<br>
-		<strong>赤で訂正すること</strong>
+		<a href="detail.html" class="img60">
+		<img src="mondai.jpg" alt="画像の代替文字が入ります。" class="corner">
+		<h3>11月23日配布</h3>
+		<p><strong>11月25日期限</strong>
 		</p>
 		</a>
 	</li>
-	<!-- /画像(60px)ありここまで -->
+	<!-- /画像(60px)・リンクありここまで -->
+
+
+	<!-- 画像(60px)・リンクありここから -->
+	<li>
+		<a href="detail.html" class="img60">
+		<img src="mondai.jpg" alt="画像の代替文字が入ります。" class="corner">
+		<h3>11月19日配布</h3>
+		<p><strong>11月20日期限</strong>
+		</p>
+		</a>
+	</li>
+	<!-- /画像(60px)・リンクありここまで -->
+
 
 </ul>
 </section>
@@ -138,17 +110,17 @@ $(function(){
 <section>
 	<a href="URLを入れてください。" class="ad corner">
 	<!-- 画像 -->
-	<!--
 		<img src="img/dummy_banner.gif" alt="スマートフォン用広告バナー">
-	-->
 
 	<!-- テキスト -->
+	<!--
 	<span class="corner">
 	テキスト広告や文章などが入ります。<br>
 	角丸にしたい場合は「a」タグのクラス「ad」の後ろにスペースを明けて
 	「corner」を追加してください。
 	テキストの際は「span」にも追加してください。
 	</span>
+	-->
 
 	</a>
 </section>
