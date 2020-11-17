@@ -1,0 +1,13 @@
+.container {
+  width: 80%;
+  margin: 20px auto;
+  h3 {
+    color: darkkhaki;
+  }
+}
+
+.p {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 140px;
+}
