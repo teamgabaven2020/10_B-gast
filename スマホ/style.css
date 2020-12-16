@@ -30,8 +30,8 @@ li{list-style:none;}
 	全ページ共有ここから
 ----------------------------------------*/
 body{
-	background:url(img/bg.jpg) #FFF;
-	color:#979797;
+	background: url(img/bg.jpg) #ffe3df;
+	color: #ffa49b;
 }
 
 /* リンク色変更はここ */
@@ -75,10 +75,10 @@ header{
 --------------------*/
 header h1{
 	padding:.25em 0;
-	border-bottom:solid 1px #E3E3E3;
-	color:#E3E3E3;
+	border-bottom: solid 1px #eeeeee;
+	color: #fbfbfb;
 	font-size:24px;
-	text-shadow:0 0 1px #A2A2A2;
+	text-shadow: 0 0 1px #fbfbfb;
 	text-align:center;
 }
 
